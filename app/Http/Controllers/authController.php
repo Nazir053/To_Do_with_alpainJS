@@ -17,6 +17,8 @@ class authController extends Controller
         echo "Login form submitted";
     }
     public function signup() {
+        protected fillable = ['name', 'email', 'password'];
+        
         echo "Signup form submitted";
     }
 }
