@@ -12,4 +12,5 @@ Route::get('/login', [authController::class, 'showLogin']);
 Route::get('/signup', [authController::class,'showSignup']);
 Route::post('/signup', [authController::class,'signup']);
 Route::post('/login', [authController::class, 'login']);
-Route::get('/todos' , [todoController::class, 'show']);
+Route::get('/todos' , [todoController::class, 'show_all']);
+Route::get('/dashbord' , [todoController::class, 'show_dashbord']);
